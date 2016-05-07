@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
     providers : [],
     pipes: [],
     directives: [],
-    template: `<p> footer </p>`
+    templateUrl:'../app/common/footer/footer.component.html'
 })
 
 

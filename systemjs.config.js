@@ -39,11 +39,7 @@
     }
 
     // filterSystemConfig - index.html's chance to modify config before we register it.
-    //noinspection JSUnresolvedVariable
-    if (global.filterSystemConfig) {
-        //noinspection JSUnresolvedFunction
-        global.filterSystemConfig(config);
-    }
+    if (global.filterSystemConfig) { global.filterSystemConfig(config); }
 
     System.config(config);
 

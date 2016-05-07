@@ -5,7 +5,8 @@ import {Component} from '@angular/core';
     providers : [],
     pipes: [],
     directives: [],
-    templateUrl: 'app/common/header.component.html'
+    templateUrl: '../app/common/header/header.component.html',
+    styleUrls:[]
 })
 
 
