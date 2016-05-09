@@ -240,3 +240,27 @@ _:-ms-input-placeholder, :root .demo-graph {
     margin-bottom: 40px;
     z-index: 900;
 }
+
+
+
+
+
+
+.portfolio-max-width {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+
+.portfolio-contact .mdl-textfield {
+    width: 100%;
+}
+
+.portfolio-contact form {
+    max-width: 550px;
+    margin: auto;
+}
+
+

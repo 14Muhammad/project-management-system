@@ -1,1 +1,27 @@
-<h2>Login component</h2>
+<div mdl class="mdl-grid portfolio-max-width portfolio-contact">
+    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__supporting-text">
+            <form  [ngFormModel]="loginForm" (submit)="doLogin($event)" class="">
+                <div ng-control-group="loginInfo">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="email" id="Email"  ngControl="email">
+                        <label class="mdl-textfield__label" for="Email">Email</label>
+                        <span class="mdl-textfield__error">Enter correct email</span>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="password" id="password" ngControl="password">
+                        <label class="mdl-textfield__label" for="password">Password</label>
+                        <span class="mdl-textfield__error">Enter correct password</span>
+                    </div>
+                </div>
+                <p>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            type="submit">
+                        Sign In
+                    </button>
+                </p>
+                <a>Forgot password?</a>
+            </form>
+        </div>
+    </div>
+</div>

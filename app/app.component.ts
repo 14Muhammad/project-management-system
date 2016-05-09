@@ -14,9 +14,8 @@ import {DashboardComponent} from "./dashboard/dashboard.component";
 import {MDL} from "./common/material/MDL";
 
 @Component({
-    selector: 'my-app',
-    directives:[ROUTER_DIRECTIVES,WelcomeComponent,
-        SearchComponent,LoginComponent,HeaderComponent,
+    selector: 'project-management-system',
+    directives: [ROUTER_DIRECTIVES,WelcomeComponent,SearchComponent,LoginComponent,HeaderComponent,
         FooterComponent,SidebarComponent,ProjectComponent,
         SpinnerComponent,ClientComponent,DashboardComponent,MDL],
     providers:[SpinnerService],
@@ -46,7 +45,7 @@ export class AppComponent implements OnInit{
     }
 
     ngOnInit() {
-        //this.router.navigate(['/dashboard']);
+        this.router.navigate(['/login']);
     }
-    
+
 }

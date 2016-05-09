@@ -1,10 +1,11 @@
 import {Component} from '@angular/core';
+import {MDL} from "../material/MDL";
 
 @Component({
     selector: 'sidebar-component',
     providers : [],
     pipes: [],
-    directives: [],
+    directives: [MDL],
     templateUrl: '../app/common/sidebar/sidebar.component.html',
     styleUrls:[]
 })
